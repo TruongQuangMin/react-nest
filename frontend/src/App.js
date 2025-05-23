@@ -33,7 +33,7 @@ export default function UserList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/users')
+    axios.get('https://react-nest-b4ja.onrender.com/users')
       .then(res => setUsers(res.data.users))
       .catch(err => console.error(err));
   }, []);
